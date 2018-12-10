@@ -10,7 +10,7 @@ class Calculator 	//creating a class
 		System.out.println("Division is:" + div(20,12));
 		
 	}
-	static double add(double a,double b)
+	static double add(double one,double two)
 	{
 		double addition = one + two;
 		return addition;
@@ -18,7 +18,7 @@ class Calculator 	//creating a class
 	static double sub(double one, double two)
 	{
 		double subtraction = one-two;
-		return c;
+		return subtraction;
 	}
 	static double mul(double one,double two)
 	{
