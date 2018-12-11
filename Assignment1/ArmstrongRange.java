@@ -1,3 +1,4 @@
+/* To determine the Armstrong number with in a given range*/
 public class ArmstrongRange 
 {
 	public static void main(String[] args) 
