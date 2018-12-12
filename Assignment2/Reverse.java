@@ -1,17 +1,27 @@
-class Reverse
-{
-	public static void main(String args[])
+
+public class Reverse {
+
+	public String stringReverse(String name)
 	{
-		int i,j,len;	
-		String answer = "",value;
-		String names = "Shiva Krishna";
-		String[] name = names.split(" ");
-		int length = name.length;
-	for(i=0;i<length;i++)	
-	{
-		System.out.println(name[i]);
-	}
-	
+		char sentence[]=name.toCharArray();
+		String string1="";
+		for(int counter=0;counter<sentence.length;counter++)
+		{
+			int temp=counter;
+			while(counter<sentence.length && sentence[counter]!=' ')
+			{
+				counter++;
+			}
+			int temp2=counter-1;
+			while(temp2>=temp)
+			{
+				string1=string1+sentence[temp2];
+				temp2--;
+			}
+			if(counter<sentence.length)
+				string1=string1+sentence[counter];
+		}
+		return string1;
 	}
 }
-		
+
