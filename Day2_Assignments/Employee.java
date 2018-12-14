@@ -3,8 +3,21 @@ public class Employee //Employee class
 	private int id;
 	private String name;
 	private int monthlyBasic;
+	private static int pfRate;
 	final int medical_allowance = 1250;
 	final int conveyance_allowance = 800;
+
+	public Employee()
+	{
+		
+	}
+	public static int getPfRate() {
+		return pfRate;
+	}
+
+	public static void setPfRate(int pfRate) {
+		Employee.pfRate = pfRate;
+	}
 
 	public void setId(int id) 	//sets id value
 	{	
@@ -40,7 +53,7 @@ public class Employee //Employee class
 	
 	public double getPf()	//gets pf value
 	{	
-		double pf ;
+		double pf = (Employee.getPfRate() * monthlyBasic)/100;
 		if(monthlyBasic<=6500)
 			pf = 0;
 		else

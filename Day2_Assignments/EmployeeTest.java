@@ -12,7 +12,7 @@ public class EmployeeTest //EmployeeTest class
 		employee.setId(111);
 		employee.setName("Jhon");
 		employee.setMonthlyBasic(9000);
-		
+		employee.setPfRate(10);
 	}
 	
 	//testing for annual basic salary
@@ -62,5 +62,13 @@ public class EmployeeTest //EmployeeTest class
 	{
 		double result = employee.getAnnualTakeHome();
 		assertEquals(174600,result,1);
+	}
+	
+	//testing to get pfrate
+	@Test
+	public void testgetpfRate()
+	{
+		int result = Employee.getPfRate();
+		assertEquals(10,result);
 	}
 }
