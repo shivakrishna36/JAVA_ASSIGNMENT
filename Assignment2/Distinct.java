@@ -7,8 +7,8 @@ public class Distinct
 		int length = numbers.length;
 		int addition = i + j + k;
 		
-		int expected_addition = (length * (length+1))/2;
-		int result = expected_addition - addition;
+		int expectedAddition = (length * (length+1))/2;
+		int result = expectedAddition - addition;
 		return result;
 	}
 }

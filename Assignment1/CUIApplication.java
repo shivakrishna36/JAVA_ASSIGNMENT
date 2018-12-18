@@ -1,8 +1,8 @@
 /* A user to enter his Login name and password, after entering the valid user-id 
-	and password it will print the message “Welcome” along with user name.
+	and password it will print the message ï¿½Welcomeï¿½ along with user name.
 	As per the validation is concerned, the program should keep a track of 
 	login attempts. After three
-	attempts a message should be flashed saying “Contact Admin” 
+	attempts a message should be flashed saying ï¿½Contact Adminï¿½ 
 	and the program should terminate. */
 import java.util.Scanner;
 class CUIApplication
@@ -16,12 +16,12 @@ class CUIApplication
 		{
 			Scanner input = new Scanner(System.in);
 			System.out.println("Enter the user name:");
-			String user_name = input.nextLine();
+			String userName = input.nextLine();
 			System.out.println("Enter the password:");
 			int password = input.nextInt();
-			if(user_name.equals(name) && password == value)
+			if(userName.equals(name) && password == value)
 			{
-				System.out.println("Welcome" + user_name);
+				System.out.println("Welcome" + userName);
 				break;
 			}
 			else

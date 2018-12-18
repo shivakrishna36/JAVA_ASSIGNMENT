@@ -8,11 +8,11 @@ class Month
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter the date:");
 		String date = input.next();
-		String day=date.substring(0,2);
+		String day = date.substring(0,2);
 		
-		String month=date.substring(3,5);
+		String month = date.substring(3,5);
 		
-		String year=date.substring(6,10);
+		String year = date.substring(6,10);
 		
 		switch(month)
 		{

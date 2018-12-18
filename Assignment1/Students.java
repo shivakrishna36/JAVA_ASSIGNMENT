@@ -3,7 +3,7 @@ class Students
 {
 	public static void main(String args[])
 	{
-		int total_marks = 0, average_marks = 0, subject1 = 0, subject2 = 0, subject3 = 0;
+		int totalMarks = 0, averageMarks = 0, subject1 = 0, subject2 = 0, subject3 = 0;
 		for(int i=1;i<4;i++)
 		{
 			Scanner scan = new Scanner(System.in);
@@ -23,8 +23,8 @@ class Students
 			subject1 = subject1 + one;
 			subject2 = subject2 + two;
 			subject3 = subject3 + three;
-			average_marks = average_marks + average;
-			total_marks = total_marks + total;
+			averageMarks = averageMarks + average;
+			totalMarks = totalMarks + total;
 		}
 		System.out.println("Average for JAVA of all students is:" + subject1/3);
 		System.out.println(" ");
@@ -32,9 +32,9 @@ class Students
 		System.out.println(" ");
 		System.out.println("Average for Spring of all students is:" + subject3/3);
 		System.out.println(" ");
-		System.out.println("The average marks scored by all the Students is: " + average_marks);
+		System.out.println("The average marks scored by all the Students is: " + averageMarks);
 		System.out.println(" ");
-		System.out.println("The total marks scored by all the Students is: " + total_marks);
+		System.out.println("The total marks scored by all the Students is: " + totalMarks);
 	}		
 }
 				

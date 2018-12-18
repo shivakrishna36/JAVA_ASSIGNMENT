@@ -3,13 +3,13 @@ public class Marks
 {
 	public static void main(String[] args) 
 	{		
-		Scanner n = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		System.out.println("Enter maths marks");
-		int maths = n.nextInt();
+		int maths = input.nextInt();
 		System.out.println("Enter english marks");
-		int english = n.nextInt();
+		int english = input.nextInt();
 		System.out.println("Enter java marks");
-		int java = n.nextInt();
+		int java = input.nextInt();
 
 		if(maths>=60 && english>=60 && java>=60)
 		{
