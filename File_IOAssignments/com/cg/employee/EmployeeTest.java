@@ -2,6 +2,8 @@ package com.cg.employee;
 
 import static org.junit.Assert.*;
 
+import java.io.IOException;
+
 import org.junit.Test;
 
 public class EmployeeTest 
@@ -10,9 +12,9 @@ public class EmployeeTest
 	
 	
 	@Test
-	public void test() 
+	public void test() throws IOException 
 	{
-		assertEquals(1236,employee.getId());
+		employee.display(employee);	
 	}
 
 }
